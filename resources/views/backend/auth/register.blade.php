@@ -61,14 +61,10 @@
 
                                             <div class="col-12">
 												<label for="name" class="form-label">Full Name</label>
-												<input type="text" name="full_name" class="form-control" id="name" placeholder="enter your name">
+												<input type="text" name="name" class="form-control" id="name" placeholder="enter your name">
 											</div>
 
-											<div class="col-12">
-												<label for="name" class="form-label">User Name</label>
-												<input type="text" name="user_name" class="form-control" id="name" >
-											</div>
-
+											
 											<div class="col-12">
 												<label for="inputEmailAddress" class="form-label">Email Address</label>
 												<input type="email" name="email" class="form-control" id="inputEmailAddress" placeholder="example@user.com">

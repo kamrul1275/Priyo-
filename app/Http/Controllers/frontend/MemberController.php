@@ -8,6 +8,12 @@ use App\Models\User;
 
 class MemberController extends Controller
 {
+
+    function memberPage(){
+
+        return view('frontend.page.member.member');
+    }//end method
+
     function activeMember(){
 
        $latest_members = User::latest()->get();
@@ -23,12 +29,21 @@ class MemberController extends Controller
           
 
         $request->validate([
-            'gender' => 'required|in:male,female',
+            'my_gender' => 'required',
+            'seeking_gender' => 'required',
         ]);
     
-        $gender = $request->input('gender');
-        $search_results = User::where('gender', $gender)->where('active', true)->latest()->get();
+        $my_gender = $request->input('my_gender');
+
+        //dd($my_gender);
+        $seeking_gender = $request->input('seeking_gender');
+        //dd($seeking_gender);
     
+        // Fetch users of the seeking gender
+        $search_results = User::where('gender', $seeking_gender)->latest()->get();
+    
+        // Debugging: check search results
+        dd($search_results);
         return view('frontend.page.member.search_member', compact('search_results', 'gender'));
     }
 

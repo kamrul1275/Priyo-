@@ -21,29 +21,32 @@ class RegisterController extends Controller
     public function register(Request $request)
     {
         $request->validate([
-            'full_name' => 'required|string|max:255',
-            'user_name' => 'required|string|max:255|unique:users',
+            'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'phone' => 'required|string|max:15',
             'password' => 'required|string|min:8',
-            'location' => 'required|string|max:255',
+            // 'location' => 'required|string|max:255',
             'gender' => 'required|in:male,female,other',
-            'birthday' => 'required|date',
+            'birthday' => 'required',
         ]);
 
-        //dd($request->all());    
-        $user = User::create([
-            'full_name'=>$request->full_name,
-            'user_name'=>$request->user_name,
-            'email' => $request->email,
-            'phone' => $request->phone,
-            'password' => Hash::make($request->password),
-            'location' => $request->location,
-            'gender' => $request->gender,
-            'birthday'=>$request->birthday,
-        ]);
+       // dd($request->all());    
+       $user = new User;
+       $user->name = $request->input('name');
+       $user->email = $request->input('email');
+       $user->phone = $request->input('phone');
+     
+       $user->gender = $request->input('gender');
+       $user->password = bcrypt($request->input('password'));
+       $user->birthday = date('Y-m-d H:i:s', strtotime($request->input('birthday')));
+    //    $user->location = $request->input('location');
+       $user->active = $request->input('active', true);
 
-        //dd($user);
+       //dd($user);
+       $user->save();
+
+
+       
     
        // Auth::login($user);
     

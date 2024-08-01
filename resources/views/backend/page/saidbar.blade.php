@@ -23,12 +23,12 @@
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class="bx bx-category"></i>
 						</div>
-						<div class="menu-title">Category</div>
+						<div class="menu-title">Blog</div>
 					</a>
 					<ul>
-						<li> <a href="{{route('add.category')}}"><i class="bx bx-right-arrow-alt"></i>Create Category</a>
+						<li> <a href="{{route('blog.create')}}"><i class="bx bx-right-arrow-alt"></i>Create Blog</a>
 						</li>
-						<li> <a href="{{route('all.category')}}"><i class="bx bx-right-arrow-alt"></i>All Category</a>
+						<li> <a href="{{route('all.blog')}}"><i class="bx bx-right-arrow-alt"></i>All Blog</a>
 						</li>
 					</ul>
 				</li>
@@ -36,23 +36,14 @@
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class="bx bx-category"></i>
 						</div>
-						<div class="menu-title">Application</div>
+						<didv class="menu-title">Sucsses Story</didv>
 					</a>
 					<ul>
 						<li> <a href="app-emailbox.html"><i class="bx bx-right-arrow-alt"></i>Email</a>
 						</li>
 						<li> <a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>Chat Box</a>
 						</li>
-						<li> <a href="app-file-manager.html"><i class="bx bx-right-arrow-alt"></i>File Manager</a>
-						</li>
-						<li> <a href="app-contact-list.html"><i class="bx bx-right-arrow-alt"></i>Contatcs</a>
-						</li>
-						<li> <a href="app-to-do.html"><i class="bx bx-right-arrow-alt"></i>Todo List</a>
-						</li>
-						<li> <a href="app-invoice.html"><i class="bx bx-right-arrow-alt"></i>Invoice</a>
-						</li>
-						<li> <a href="app-fullcalender.html"><i class="bx bx-right-arrow-alt"></i>Calendar</a>
-						</li>
+					
 					</ul>
 				</li>
 				<li class="menu-label">UI Elements</li>
@@ -61,16 +52,14 @@
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class='bx bx-cart'></i>
 						</div>
-						<div class="menu-title">eCommerce</div>
+						<div class="menu-title">Member</div>
 					</a>
 					<ul>
-						<li> <a href="ecommerce-products.html"><i class="bx bx-right-arrow-alt"></i>Products</a>
+						<li> <a href="{{route('all.member.backend')}}"><i class="bx bx-right-arrow-alt"></i>all Member</a>
 						</li>
-						<li> <a href="ecommerce-products-details.html"><i class="bx bx-right-arrow-alt"></i>Product Details</a>
+						<li> <a href="{{route('paid.member.backend')}}"><i class="bx bx-right-arrow-alt"></i>Match Member</a>
 						</li>
-						<li> <a href="ecommerce-add-new-products.html"><i class="bx bx-right-arrow-alt"></i>Add New Products</a>
-						</li>
-						<li> <a href="ecommerce-orders.html"><i class="bx bx-right-arrow-alt"></i>Orders</a>
+						<li> <a href="{{route('match.member.backend')}}"><i class="bx bx-right-arrow-alt"></i>Paid Member</a>
 						</li>
 					</ul>
 				</li>
@@ -78,57 +67,24 @@
 					<a class="has-arrow" href="javascript:;">
 						<div class="parent-icon"><i class='bx bx-bookmark-heart'></i>
 						</div>
-						<div class="menu-title">Components</div>
+						<div class="menu-title">Contact</div>
 					</a>
 					<ul>
-						<li> <a href="component-alerts.html"><i class="bx bx-right-arrow-alt"></i>Alerts</a>
+						<li> <a href="{{route('show.all.contact')}}"><i class="bx bx-right-arrow-alt"></i>All Contact</a>
 						</li>
-						<li> <a href="component-accordions.html"><i class="bx bx-right-arrow-alt"></i>Accordions</a>
-						</li>
-						<li> <a href="component-badges.html"><i class="bx bx-right-arrow-alt"></i>Badges</a>
-						</li>
-						<li> <a href="component-buttons.html"><i class="bx bx-right-arrow-alt"></i>Buttons</a>
-						</li>
-						<li> <a href="component-cards.html"><i class="bx bx-right-arrow-alt"></i>Cards</a>
-						</li>
-						<li> <a href="component-carousels.html"><i class="bx bx-right-arrow-alt"></i>Carousels</a>
-						</li>
-						<li> <a href="component-list-groups.html"><i class="bx bx-right-arrow-alt"></i>List Groups</a>
-						</li>
-						<li> <a href="component-media-object.html"><i class="bx bx-right-arrow-alt"></i>Media Objects</a>
-						</li>
-						<li> <a href="component-modals.html"><i class="bx bx-right-arrow-alt"></i>Modals</a>
-						</li>
-						<li> <a href="component-navs-tabs.html"><i class="bx bx-right-arrow-alt"></i>Navs & Tabs</a>
-						</li>
-						<li> <a href="component-navbar.html"><i class="bx bx-right-arrow-alt"></i>Navbar</a>
-						</li>
-						<li> <a href="component-paginations.html"><i class="bx bx-right-arrow-alt"></i>Pagination</a>
-						</li>
-						<li> <a href="component-popovers-tooltips.html"><i class="bx bx-right-arrow-alt"></i>Popovers & Tooltips</a>
-						</li>
-						<li> <a href="component-progress-bars.html"><i class="bx bx-right-arrow-alt"></i>Progress</a>
-						</li>
-						<li> <a href="component-spinners.html"><i class="bx bx-right-arrow-alt"></i>Spinners</a>
-						</li>
-						<li> <a href="component-notifications.html"><i class="bx bx-right-arrow-alt"></i>Notifications</a>
-						</li>
-						<li> <a href="component-avtars-chips.html"><i class="bx bx-right-arrow-alt"></i>Avatrs & Chips</a>
-						</li>
+					
 					</ul>
 				</li>
 				<li>
 					<a class="has-arrow" href="javascript:;">
 						<div class="parent-icon"><i class="bx bx-repeat"></i>
 						</div>
-						<div class="menu-title">Content</div>
+						<div class="menu-title">Product</div>
 					</a>
 					<ul>
-						<li> <a href="content-grid-system.html"><i class="bx bx-right-arrow-alt"></i>Grid System</a>
+						<li> <a href="content-grid-system.html"><i class="bx bx-right-arrow-alt"></i>Create Product</a>
 						</li>
-						<li> <a href="content-typography.html"><i class="bx bx-right-arrow-alt"></i>Typography</a>
-						</li>
-						<li> <a href="content-text-utilities.html"><i class="bx bx-right-arrow-alt"></i>Text Utilities</a>
+						<li> <a href="content-typography.html"><i class="bx bx-right-arrow-alt"></i>All Product</a>
 						</li>
 					</ul>
 				</li>
@@ -136,58 +92,64 @@
 					<a class="has-arrow" href="javascript:;">
 						<div class="parent-icon"> <i class="bx bx-donate-blood"></i>
 						</div>
-						<div class="menu-title">Icons</div>
+						<div class="menu-title">Role</div>
 					</a>
 					<ul>
-						<li> <a href="icons-line-icons.html"><i class="bx bx-right-arrow-alt"></i>Line Icons</a>
+						<li> <a href="icons-line-icons.html"><i class="bx bx-right-arrow-alt"></i>Create Role</a>
 						</li>
-						<li> <a href="icons-boxicons.html"><i class="bx bx-right-arrow-alt"></i>Boxicons</a>
+						<li> <a href="icons-boxicons.html"><i class="bx bx-right-arrow-alt"></i>All Role</a>
 						</li>
-						<li> <a href="icons-feather-icons.html"><i class="bx bx-right-arrow-alt"></i>Feather Icons</a>
-						</li>
+					
 					</ul>
 				</li>
-				<li class="menu-label">Forms & Tables</li>
+
+
+
 				<li>
 					<a class="has-arrow" href="javascript:;">
-						<div class="parent-icon"><i class='bx bx-message-square-edit'></i>
+						<div class="parent-icon"> <i class="bx bx-donate-blood"></i>
 						</div>
-						<div class="menu-title">Forms</div>
+						<div class="menu-title">Permission</div>
 					</a>
 					<ul>
-						<li> <a href="form-elements.html"><i class="bx bx-right-arrow-alt"></i>Form Elements</a>
+						<li> <a href="icons-line-icons.html"><i class="bx bx-right-arrow-alt"></i>Create Permission</a>
 						</li>
-						<li> <a href="form-input-group.html"><i class="bx bx-right-arrow-alt"></i>Input Groups</a>
+						<li> <a href="icons-boxicons.html"><i class="bx bx-right-arrow-alt"></i>All Permission</a>
 						</li>
-						<li> <a href="form-layouts.html"><i class="bx bx-right-arrow-alt"></i>Forms Layouts</a>
-						</li>
-						<li> <a href="form-validations.html"><i class="bx bx-right-arrow-alt"></i>Form Validation</a>
-						</li>
-						<li> <a href="form-wizard.html"><i class="bx bx-right-arrow-alt"></i>Form Wizard</a>
-						</li>
-						<li> <a href="form-text-editor.html"><i class="bx bx-right-arrow-alt"></i>Text Editor</a>
-						</li>
-						<li> <a href="form-file-upload.html"><i class="bx bx-right-arrow-alt"></i>File Upload</a>
-						</li>
-						<li> <a href="form-date-time-pickes.html"><i class="bx bx-right-arrow-alt"></i>Date Pickers</a>
-						</li>
-						<li> <a href="form-select2.html"><i class="bx bx-right-arrow-alt"></i>Select2</a>
-						</li>
+					
 					</ul>
 				</li>
+				
+			
 				<li>
 					<a class="has-arrow" href="javascript:;">
 						<div class="parent-icon"><i class="bx bx-grid-alt"></i>
 						</div>
-						<div class="menu-title">Tables</div>
+						<div class="menu-title">Employment</div>
 					</a>
 					<ul>
-						<li> <a href="table-basic-table.html"><i class="bx bx-right-arrow-alt"></i>Basic Table</a>
+						<li> <a href="table-basic-table.html"><i class="bx bx-right-arrow-alt"></i>Create Employment</a>
 						</li>
-						<li> <a href="table-datatable.html"><i class="bx bx-right-arrow-alt"></i>Data Table</a>
+						<li> <a href="table-datatable.html"><i class="bx bx-right-arrow-alt"></i>All Employment</a>
 						</li>
 					</ul>
 				</li>
+
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class="bx bx-grid-alt"></i>
+						</div>
+						<div class="menu-title">Employment test</div>
+					</a>
+					<ul>
+						<li> <a href="table-basic-table.html"><i class="bx bx-right-arrow-alt"></i>Create Employment test </a>
+						</li>
+						<li> <a href="table-datatable.html"><i class="bx bx-right-arrow-alt"></i>All Employment test</a>
+						</li>
+					</ul>
+				</li>
+
+
 				<li class="menu-label">Pages</li>
 				<li>
 					<a class="has-arrow" href="javascript:;">
